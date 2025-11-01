@@ -1,0 +1,43 @@
+/* Rokh Bedium - وزن 600 */
+@font-face {
+    font-family: 'Rokh';
+    src: url('Rokh-Medium.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Rokh Bold - وزن 900 */
+  @font-face {
+    font-family: 'Rokh';
+    src: url('Rokh-UltraBold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* YekanBakh Light - وزن 300 */
+  @font-face {
+    font-family: 'YekanBakh';
+    src: url('YekanBakh-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* YekanBakh Thin - وزن 400 */
+  @font-face {
+    font-family: 'YekanBakh';
+    src: url('YekanBakh-Thin.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+   /* YekanBakh medium - وزن 800 */
+  @font-face {
+    font-family: 'YekanBakh';
+    src: url('YekanBakh-Bold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }

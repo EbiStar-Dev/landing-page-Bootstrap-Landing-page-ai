@@ -1,0 +1,627 @@
+@import url(../font/fonts.css);
+body{
+    font-family: "YekanBakh";
+    background-color: #0f0f0f;
+    color: #f0f8ff;
+}
+  .cursor-circle {
+    position: fixed;
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fbbf24; /* رنگ دایره */
+    border-radius: 50%;
+    pointer-events: none; /* روی کلیک تاثیری نداشته باشه */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease; /* حرکت نرم */
+    z-index: 9999;
+    background-color: #fbbf245c;
+  }
+  .cursor-circle:focus{
+    background-color: #fbbf24;
+  }
+  .title-section{
+    align-content: center;
+  }
+.title-section h2{
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+.title-section p{
+    font-size: 18px;
+}
+.h2{
+     font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+/* HEADER */
+
+.navbar > .container{
+    background-color: #ffffff20;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 8px 16px;
+    z-index: 20;
+    margin-top: 10px;
+}
+
+.navbar .nav-item .nav-link{
+    color: #f1f1f1;
+    font-weight: 500;
+}
+.navbar .nav-item .active{
+    color: #fbbf24;
+    
+}
+.navbar .icon-link{
+    background-color: #fbbf2420;
+    border-radius: 10px;
+    padding: 7px;
+}
+.navbar .icon-link img{
+    width: 25px;
+}
+.icon-header-box{
+    gap: 8px;
+}
+/* SECTION HERO */
+/* .section-main-hero::after {
+  content: "";
+  position: absolute;
+ top: -80px;
+    left: -50px;
+    width: 415px;
+    height: 50px;
+    background: linear-gradient(90deg, #ffffff69, transparent);
+    filter: blur(12px);
+    transform-origin: left center;
+    transform: rotate(40deg);
+    z-index: 0;
+    pointer-events: none;
+} */
+
+.section-main-hero{
+    position: relative;
+    overflow: hidden;
+}
+
+.section-main-hero .god-rays #gr-1,
+.section-main-hero .god-rays #gr-2,
+.section-main-hero .god-rays #gr-3 {
+    position: absolute;
+    top: -80px;
+    left: -50px;
+    width: 450px;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.616), transparent);
+    filter: blur(14px);
+    transform-origin: left center;
+    z-index: 0;
+}
+.section-main-hero .god-rays #gr-1{
+    transform: rotate(37deg);
+    opacity: 0.5;
+    top: -80px;
+    left: -50px;
+}
+.section-main-hero .god-rays #gr-2{
+    transform: rotate(50deg);
+    opacity: 0.35;
+    top: -70px; /* کمی پایین‌تر */
+    left: -40px; /* کمی راست‌تر */
+}
+.section-main-hero .god-rays #gr-3{
+    transform: rotate(68deg);
+    opacity: 0.25;
+    top: -60px; /* کمی پایین‌تر */
+    left: -30px; /* کمی راست‌تر */
+}
+
+
+
+.section-main-hero{
+    padding-top: 170px;
+    margin-top: -100px;
+      background-image: 
+    linear-gradient(#222222 1px, transparent 1px), 
+    linear-gradient(90deg, #222222 1px, transparent 1px);
+  background-size: 80px 60px;
+  background-color: #121212;
+  height: 95vh;
+  overflow: hidden;
+}
+.section-hero {
+    position: relative;
+    border-radius: 30px;
+    padding: 1px;
+    background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+    box-shadow: 10px 10px 30px -3px #000000;
+    /* overflow: hidden; برای جلوگیری از بیرون زدگی شبه‌المنت */
+}
+
+.section-hero::before {
+    content: "";
+    position: absolute;
+    top: 1px;    /* مطابق padding والد */
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 29px;
+    border: solid 1px #202222;
+    background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+    z-index: 1;
+}
+
+.section-hero > * {
+    position: relative;  /* برای اینکه محتوا روی شبه‌المنت قرار بگیره */
+    z-index: 2;
+}
+
+.btn-primary{
+    background-color: #FBBF245C;
+    font-family: "YekanBakh";
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFFFFF;
+    box-shadow: 0px 10px 30px -10px rgba(250, 204.0000000000002, 21.000000000000018, 0.33);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FBBF24;
+    border-radius:8px;
+    padding: 8px 24px 8px 24px;
+}
+.p{
+    color:#f0f8ff ;
+    font-size: 17px;
+}
+.title-hero{
+    font-family: "Rokh";
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 58px;
+    background: linear-gradient(10deg, #000000 5%, #fff 50%, #000 110%);
+    background-clip: text;
+    color: #00000000;
+}
+.img-section-hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -60px;
+    border-radius: 30px;
+}
+.to-shop svg path{
+stroke: #fbbf24;
+}
+.to-shop:hover svg path{
+    stroke:#000;
+}
+.to-shop{
+    color: #fbbf24;
+    margin-right: 10px;
+}
+.to-account:hover,.to-shop:hover{
+    background-color: #fbbf24;
+    border: 1px solid #fbbf24;
+    box-shadow:0px 5px 14px -5px #fbbf24;
+    color: #000;
+}
+/* IMAGE BOX CATEGORY */
+
+.img-box-category > .row .col-3{
+    justify-content: center;
+}
+.img-box {
+    position: relative;
+    padding: 15px 10px 10px 15px;
+    border: 1px solid #222;
+    border-radius: 12px;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 100%; /* همه کارت‌ها ارتفاع یکسان بگیرند */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* وسط‌چین عمودی محتوا */
+    width: 160px;
+}
+
+.img-box a {
+    display: flex;
+    flex-direction: column; /* تصویر بالا، متن پایین */
+    align-items: center;    /* وسط‌چین افقی */
+    justify-content: center; /* وسط‌چین عمودی */
+    text-align: center;
+    height: 100%;
+    gap: 10px; /* فاصله بین تصویر و متن */
+    text-decoration: none; /* لینک بدون خط زیر */
+    color: inherit; /* رنگ متن ارث‌بری */
+}
+
+.img-box-category .img-box figure {
+    width: 70px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    background-color: #ffffff20;
+    margin: 0;
+    display: flex;
+    align-items: center; /* وسط‌چین عمودی تصویر */
+    justify-content: center; /* وسط‌چین افقی تصویر */
+background-image: linear-gradient(0deg, #0f0f0f, #332f23);
+    border-top: 1px solid #665c3b;
+}
+.img-box:before{
+    position: absolute;
+    content: "";
+    left: 35px;
+    width: 60%;
+    height: 60px;
+    background: radial-gradient(circle 50px at 50% 0%, #FBBF2430, #00000000);
+    top: 0px;
+    z-index: 11;
+}
+.element {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.img-box::after {
+    content: "";
+    position: absolute;
+    background-color: #FBBF24;
+    width: 30px;
+    height: 2px;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 0px 0px 3px 3px;
+    top: 1px;
+     left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.img-box figure img {
+    width: 100%;
+    height: auto; /* نسبت تصویر حفظ شود */
+    display: block;
+}
+
+/* Slider */
+.text-center h2{
+font-weight: 900;
+}
+.text-center span{
+transform: translate(-50%, 0%);
+    left: 50%;
+    width: 100%;
+    opacity: 0.1;
+    color: #cfcfcf;
+    font-size: 120px;
+    font-family: inherit;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+}
+.text-center{
+    position: relative;
+}
+    .slider-container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      height: 400px;
+      perspective: 1000px;
+      margin: auto;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-body{
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .card {
+        background-color: #0F0F0F;
+      position: absolute;
+      width: 250px;
+      padding: 10px;
+      border-radius: 35px;
+      box-shadow: 0px 3px 15px -1px #000000;
+      border: 1px solid #222222;
+      transition: transform 0.5s ease, z-index 0.5s ease, opacity 0.5s ease;
+    }
+    .card-title{
+        margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #FFFFFF;
+    }
+    .add-to-cart-box .price{
+        color: #f0f8ff;
+        align-content: center;
+    }
+    .card img{
+        border-radius: 30px;
+    }
+    .add-to-cart-box{
+        background-color: #FFFFFF10;
+        padding: 10px 20px 10px 10px ;
+        display: flex;
+        border-radius: 16px 16px 32px 32px;
+    }
+    .add-to-cart-icon{
+        display: block;
+            padding: 10px;
+    border-radius: 11px 10px 10px 20px;
+    box-shadow: 0px 4px 15px -2px #facc15aa;
+        background-color: #FBBF24;
+    }
+
+/* dots slider */
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* فاصله بین دکمه‌ها و نقطه‌ها */
+  margin-top: 15px;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 5px;
+  border-radius: 8px;
+  background: #fbbf245c;
+  cursor: pointer;
+  transition: 0.3s;;
+}
+
+.slider-dot.active {
+  background: #fbbf24;
+  width: 15px;
+}
+.slider-next , .slider-prev{
+    background-color: #fbbf245c;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+/* --------------- */
+
+.about-me{
+    margin-top: 150px;
+}
+.about-me .row-img-box{
+  --bs-gutter-y: 15px;
+}
+.about-me .img-box-about-me{
+    flex-direction: row;
+    width: auto;
+
+}
+.about-me .img-box img{
+    padding: 15px;
+    width: 55px;
+}
+.about-me figure{
+    padding: 0;
+    height: fit-content;
+    width:fit-content ;
+}
+.about-me .p-bold{
+    font-weight: 900;
+    font-size: 14px;
+}
+.about-me .img-box-about-me .p{
+    font-size: 12px !important;
+}
+.about-me .img-box::after{
+    right: -1px;
+    top: 43%;
+    width: 2px;
+    height: 15px;
+    border-radius: 3px 0px 0px 3px;
+    transform: translate(-50%, 0%);
+}
+.overly-about-me{
+    background-image: url(../img/Group.png);
+}
+.about-me .img-box::before{
+    right: 0px;
+    width: 60%;
+    height: 100%;
+    background: radial-gradient(circle 50px at 100% 50%, #FBBF2430, #00000000);
+    top: 0px;
+}
+
+
+/* SECTION CTA */
+.call-to-action{
+       border: 1px solid #202222;
+       border-radius: 16px;
+       box-shadow: 5px 5px 20px -5px #000000;
+}
+
+.title-action{
+    font-family: "Rokh", Sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+        background: linear-gradient(10deg, #000000 5%, #fff 50%, #000 110%);
+    background-clip: text;
+    color: transparent;
+}
+.call-to-action>div{
+    text-align: center;
+}
+
+
+
+
+.cta-img{
+    width: 100%;
+    margin-top: -100px;
+}
+
+
+/* #comment-slider:after {
+    position: absolute;
+    content: "";
+    left: 35px;
+    width: 60%;
+    height: 600px;
+    background: radial-gradient(circle 300px at 50% 50%, #FBBF2430, #00000000);
+    top: -200px;
+    z-index: 10;
+} */
+/* comment */
+.section-comment{
+    background-image: url(../img/map-footer-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#comment-slider .card{
+    width: 360px; 
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+
+/* accordion-item */
+.accordion-item{
+    margin-bottom: 10px;
+    border: none;
+}
+.accordion-button{
+    border: 1px solid #8f8f8f !important;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+.accordion-item,.accordion-button{
+    background-color: #0f0f0f;
+    text-align: center;
+    color: #fafafa;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: transparent;
+    background-image: linear-gradient(230deg, #FBBF245C 0%, #FFFFFF00 100%);
+    border: 1px solid #FBBF24A3 !important;
+    color: #fbbf24;
+    border-radius: 12px 12px 0px 0px !important;
+    font-weight: 900;
+}
+.accordion-body{
+    background-color: #ffffff20;
+    color: #EBEBEB;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+.accordion-button::after{
+    position: absolute;
+    left: 2%;
+    color: #FBBF24 !important ;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    position: relative;
+}
+.text{
+    text-align: justify;
+    width: 83%;
+}
+footer .row{
+    background-color: #000;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+}
+footer .row div h5{
+    position: relative;
+    font-size: 16px !important;
+    font-weight: 900;
+    margin-right: 10px;
+}
+footer .row div h5::after {
+    content: "";
+    position: absolute;
+    background-color: #fbbf24;
+    width: 5px;
+    height: 10px;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 0px 0px 3px 3px ;
+    top: 2px;
+    right: -10px;
+}
+ footer .list-group .list-item a{
+font-size: 13px;
+text-decoration: none;
+color: #fff;
+ }
+ footer .row ul li{
+    list-style-type: none;
+    padding: 0;
+ }
+ footer .container:after {
+    position: absolute;
+    content: "";
+    left: 35px;
+    width: 100%;
+    height: 400px;
+    background: radial-gradient(circle 400px at 50% 100%, #FBBF2430, #00000000);
+    bottom: -100px;
+    z-index: -1;
+}
+.copy-right{
+    text-align: center;
+    margin: 10px 0px; 
+
+}
+
+
+
+
+
+
+
+
+
+    /* موقعیت‌ها */
+    .pos-center { transform: translateX(0) scale(1); z-index: 4; opacity: 1; }
+    .pos-left { transform: translateX(-150px) scale(0.85); z-index: 3; opacity: 0.9; }
+    .pos-right { transform: translateX(150px) scale(0.85); z-index: 3; opacity: 0.9; }
+    .pos-left-far { transform: translateX(-300px) scale(0.7); z-index: 2; opacity: 0.8; }
+    .pos-right-far { transform: translateX(300px) scale(0.7); z-index: 2; opacity: 0.8; }
+    .pos-left-extreme { transform: translateX(-450px) scale(0.55); z-index: 1; opacity: 0.7; }
+    .pos-right-extreme { transform: translateX(450px) scale(0.55); z-index: 1; opacity: 0.7; }
+
+    @media (max-width: 768px) {
+      .card { width: 200px; }
+      .card img { height: 140px; }
+    }
+    @media (max-width: 480px) {
+      .card { width: 160px; }
+      .card img { height: 100px; }
+    }
